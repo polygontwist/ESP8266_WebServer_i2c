@@ -15,3 +15,5 @@ Gibt über HTTP folgende Infos aus:
 - uptime
 - Anzahl der Reconects
 - HTML5-Canvas mit Temperatur- und Luftfeuchte-Kurve
+
+![Datencanvas](https://raw.githubusercontent.com/polygontwist/ESP8266_WebServer_i2c/master/canvas.png)
