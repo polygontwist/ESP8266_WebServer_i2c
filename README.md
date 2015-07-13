@@ -7,11 +7,11 @@ Speichert Daten vom SHT21 im EEPROM zwischen (1Tag).
 Benutzt für die aktuelle Zeit den time.nist.gov NTP server, er diehnt auch ale Erkennung ob die WLAN-Verbindungnoch steht
 
 Gibt über HTTP folgende Infos aus:
--Begrüßung je nach Tageszeit
--Anzahl der HTTP-Anfragen
--Temperatur (-40°...+125°)
--Luftfeuchte (0..100%)
--Uhrzeit
--uptime
--Anzahl der Reconects
--HTML5-Canvas mit Temperatur- und Luftfeuchte-Kurve
+- Begrüßung je nach Tageszeit
+- Anzahl der HTTP-Anfragen
+- Temperatur (-40°...+125°)
+- Luftfeuchte (0..100%)
+- Uhrzeit
+- uptime
+- Anzahl der Reconects
+- HTML5-Canvas mit Temperatur- und Luftfeuchte-Kurve
