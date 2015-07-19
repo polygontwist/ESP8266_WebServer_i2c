@@ -148,18 +148,13 @@ void setup() {
   delay(10);
   
 
-  // Set SDA & SCL for ESP8266 to:
-  #ifdef ARDUINO_ESP8266_ESP01
-  Wire.pins(0, 2); //0=SDA, 2=SCL
-  #endif
-  
   // Initialize I2C and OLED Display
-  Wire.begin();
-  
+  // Set SDA & SCL for ESP8266 to:
+   Wire.begin(0, 2); //0=SDA, 2=SCL, alte Version Wire.pins(0,2)
+
   //EEPROM
   iniEE();
 
- 
   //setupDisplay();   
   myOLED.init(OLED_address);
   myOLED.reset_display();
