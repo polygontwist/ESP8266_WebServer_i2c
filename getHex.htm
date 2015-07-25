@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>
+	body{font-family:Verdana;}
+	a{width:60px;margin-left:10px;}
+	h1{font-size:12pt;}
+	</style>
+	<meta charset="utf-8">
+
+	
+	
+	<script type="text/javascript">
+	function gE(id){return document.getElementById(id)}
+
+	
+	var handleFileSelect=function (){
+		var input = document.getElementById("picfileupload");
+		
+		var reader = new FileReader();
+		reader.onload = function(theFile) {
+				var data=this.result;
+				
+				ziel=gE("output");
+				ziel.innerHTML="";
+				
+				for(var t=0;t<data.length;t++){
+					if(t/16==Math.round(t/16))ziel.innerHTML+="<br>";
+					c=data[t].charCodeAt(0);
+					ziel.innerHTML+="0x"
+					if(c<10)ziel.innerHTML+="0";
+					ziel.innerHTML+=Number(c).toString(16)+",";
+				}
+								
+			};
+		reader.readAsBinaryString(input.files[0]);
+		
+		
+	}
+	
+	
+	</script>
+</head>
+<body id="body">
+
+<input type="file" name="picfileupload" id="picfileupload" onchange="handleFileSelect()"/>
+
+<p id="output">
+	
+</p>
+
+
+
+</body>
+</html>
