@@ -23,5 +23,23 @@ const byte favicon[]={
      0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00 
   };
 
-
+//HTML für ESP_WiFiWebServer_SD
+String indexHTM="<!DOCTYPE html>\r\n"
+"<html><head><style>\r\n"
+"body{font-family:Verdana;}\r\n"
+"a{width:60px;margin-left:10px;}\r\n"
+"h1{font-size:12pt;}\r\n"
+"canvas{background-color:#eee;}\r\n"
+"</style>\r\n"
+"<meta content=\"width=device-width,initial-scale=2,maximum-scale=10,user-scalable=yes\" name=\"viewport\" />\r\n"
+"<meta charset=\"utf-8\" /><link rel=\"shortcut icon\" href=\"favicon.ico\"></head>\r\n"
+"<body>\r\n"
+"<h1>$h1gtag</h1>\r\n"
+"<p>$anfragen Anfragen</p>\r\n"
+"<p>$zeit</p>\r\n"
+"<p>uptime: $uptime</p>\r\n"
+"<p>reconects: $reconnects</p>\r\n"
+"<p>SD-Card: $sdinfo</p>\r\n"
+"<p>File: $fileinfo</p>\r\n"
+"</body></html>\r\n";
 
