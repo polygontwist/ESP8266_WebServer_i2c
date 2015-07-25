@@ -19,7 +19,7 @@ Gibt über HTTP folgende Infos aus:
 ![Datencanvas](https://raw.githubusercontent.com/polygontwist/ESP8266_WebServer_i2c/master/canvas.png)
 
 
-# *_SD-VAriante
+# *_SD-Variante (ESP8266-03)
 | Pin | 	Funktion | 	SD-Card| 
 | -------------	|  ------------- |  -------------| 
 | 1 	| VCC 3V3 | 	VDD| 
