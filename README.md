@@ -17,3 +17,21 @@ Gibt über HTTP folgende Infos aus:
 - HTML5-Canvas mit Temperatur- und Luftfeuchte-Kurve
 
 ![Datencanvas](https://raw.githubusercontent.com/polygontwist/ESP8266_WebServer_i2c/master/canvas.png)
+
+
+# *_SD-VAriante
+| Pin | 	Funktion | 	SD-Card| 
+| -------------	|  ------------- |  -------------| 
+| 1 	| VCC 3V3 | 	VDD| 
+| 2 	| PD –> Vcc| |  	
+| 3   | GPIO14 |  CLK| 
+| 4 	| GPIO16 | 	| 
+| 5 	| GPIO12 	| DAT0(MISO)| 
+| 6 	| RX 	| | 
+| 7 	| GPIO13 	| CMD (MOSI)| 
+| 8 	| TX 	| | 
+| 9 	| GPIO15 –> GND | | 	
+| 10 	| GPIO02 | 	CD| 
+| 11 	| GPIO00 (flashen –> GND) | | 	
+| 12 	| GND 	| GND | 
+Pin=Pins der eigenen Adapterplatine
