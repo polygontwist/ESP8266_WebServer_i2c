@@ -351,7 +351,7 @@ void loop() { //@80MHz
      
      int dateistatus=423;
 
-  //   boolean Status_SDisReady=SD.begin(chipSelect);//
+     boolean Status_SDisReady=SD.begin(chipSelect);//CS-setzen
 
       //TODO:spezial-datei?
 
