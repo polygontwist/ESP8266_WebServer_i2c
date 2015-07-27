@@ -1,4 +1,4 @@
-# ESP8266_WebServer_i2c
+# ESP_WiFiWebServer.ino
 
 Programiert über die Arduino-IDE.
 
@@ -19,7 +19,7 @@ Gibt über HTTP folgende Infos aus:
 ![Datencanvas](https://raw.githubusercontent.com/polygontwist/ESP8266_WebServer_i2c/master/canvas.png)
 
 
-# *_SD-Variante (ESP8266-03)
+# ESP_WiFiWebServer_SD.ino (ESP8266-03)
 | Pin | 	Funktion | 	SD-Card| 
 | -------------	|  ------------- |  -------------| 
 | 1 	| VCC 3V3 | 	VDD| 
