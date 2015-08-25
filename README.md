@@ -35,3 +35,7 @@ Gibt über HTTP folgende Infos aus:
 | 11 	| GPIO00 (flashen –> GND) | (LED) | 	
 | 12 	| GND 	| GND | 
 Pin=Pins der eigenen Adapterplatine
+
+# getHex.htm
+convert bin-File to Hex-Array for Arduino or other
+z.B. für favicon.ico
