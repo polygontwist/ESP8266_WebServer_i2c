@@ -39,3 +39,8 @@ Pin=Pins der eigenen Adapterplatine
 # getHex.htm
 convert bin-File to Hex-Array for Arduino or other
 z.B. für favicon.ico
+
+# Bilder & Video vom Projekt
+- https://instagram.com/p/5WSjv7zfvV/
+- https://instagram.com/p/5mWe2uzfsn/
+- https://instagram.com/p/5S36Kqzfqw/
