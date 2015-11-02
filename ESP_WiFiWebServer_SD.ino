@@ -212,7 +212,7 @@ void setup() {
 int i;
 int wifistatus;
  
-void loop() { //@80MHz
+void loop() { //@40MHz
   loop_zeit = millis();
 
   //Zeit
