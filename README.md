@@ -44,3 +44,6 @@ z.B. für favicon.ico
 - https://instagram.com/p/5WSjv7zfvV/
 - https://instagram.com/p/5mWe2uzfsn/
 - https://instagram.com/p/5S36Kqzfqw/
+
+Setting mit Teperatur/Luftfeuchtelogger:
+![espo8266_templog](https://cloud.githubusercontent.com/assets/3751286/10920497/a3ae112c-8270-11e5-95b9-7c16cf35ed13.jpg)
