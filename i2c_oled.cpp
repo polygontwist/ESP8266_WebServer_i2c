@@ -14,7 +14,7 @@
 
   // Wire.begin(_devid);
   
-
+//  tempS=char(32+0); =space
   
 unsigned char oled_Font[][8]={
 {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00},//space  32=0
@@ -114,7 +114,7 @@ unsigned char oled_Font[][8]={
 {0x00,0x02,0x01,0x01,0x02,0x01,0x00,0x00},//~
 {0x00,0x00,0x02,0x05,0x05,0x02,0x00,0x00}, //°	95
 
-//animirtes funkICONS
+//ani funkICONS
 {0b11000000,0b11000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000,0b00000000},//96
 {0b11010000,0b11010000,0b00010000,0b11100000,0b00000000,0b00000000,0b00000000,0b00000000},
 {0b11010100,0b11010100,0b00010100,0b11100100,0b00001000,0b11110000,0b00000000,0b00000000},
@@ -123,10 +123,27 @@ unsigned char oled_Font[][8]={
 //IP
 {0b01000010,0b01111110,0b01000010,0b00000000,0b01111110,0b00010010,0b00001100,0b00000000}, //101 
 //timer
-//{0b00000000,0b00111000,0b01000101,0b01010111,0b01000101,0b00111000,0b00000000,0b00000000} //102 
-  {0b00111000,0b01000100,0b10010010,0b10011110,0b10000010,0b01000100,0b00111000,0b00000000}
+{0b00111000,0b01000100,0b10010010,0b10011110,0b10000010,0b01000100,0b00111000,0b00000000},//102
+//getNTP
+{0b11100000,0b00001000,0b00000000,0b00000100,0b00000000,0b00000010,0b00000000,0b00000111}//103 
 
 };
+ 
+/*
+   Zeichen: Spaltenweise (90° im UZ), obenlinks = X , untenlinks Y
+   X0000000     
+   00000000
+   00000000
+   00000000
+   00000000
+   00000000
+   00000000
+   00000000
+   Y0000000
+
+   0bY000000X, 0b...
+*/
+ 
  
 //64 / 8 * 128
 static char oLEDbuffer[1024] = { 
@@ -240,10 +257,12 @@ void i2c_oled::drawPixel(int x, int y, int mode)
 	int restX=x-xx*8;
 	int restY=y-yy*8;
 	
+	//Position setzen
 	setXY(yy, xx);//zeile(0..7),spalte(0..15)
 	
+	//entsprechendes Zeichen (8Byte) übertragen, dabei bit setzen
 	Wire.beginTransmission(_devid); // begin transmitting
-	Wire.write(0x40);//data mode ->8byte ->8x8bit
+	Wire.write(0x40);//data mode ->8byte ->8x8bit = 1 Zeichen
 	for(int i=0;i<8;i++){ //8byte
 		pos=posX+posY;// /8
 		data=oLEDbuffer[pos];
@@ -531,6 +550,8 @@ void i2c_oled::init_OLED(void)
   */
   sendcommand(0xaf);		//display on
 }
+
+
 
 
 
