@@ -3,8 +3,8 @@
 Programiert über die Arduino-IDE.
 
 ESP8266 WiFi Webserver mit i2c oLED und SHT21(Feutigkeit & Temperatur), 
-Speichert Daten vom SHT21 im EEPROM zwischen (1Tag).
-Benutzt für die aktuelle Zeit den time.nist.gov NTP server, er diehnt auch ale Erkennung ob die WLAN-Verbindungnoch steht
+speichert Daten vom SHT21 im EEPROM zwischen (1Tag).
+Benutzt für die aktuelle Zeit den time.nist.gov NTP server, er dient auch als Erkennung ob die WLAN-Verbindung noch steht
 
 Gibt über HTTP folgende Infos aus:
 - Begrüßung je nach Tageszeit
